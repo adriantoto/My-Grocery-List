@@ -5,12 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@color/creame"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Grocery List"
+        android:layout_centerHorizontal="true"
+        android:textSize="27dp"
+        android:fontFamily="@font/brandongrotesque_bold"
+        android:drawableLeft="@drawable/ic_grocery"
+        android:drawableStart="@drawable/ic_grocery"
+        android:drawablePadding="8dp"
+        android:textColor="@color/black"
+        />
 
     <EditText
         android:id="@+id/edittext_name"
+        android:inputType="textCapWords"
+        android:layout_below="@id/tvTitle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/brandongrotesque_regular"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textview_amount"
@@ -20,6 +41,8 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="8dp"
         android:text="0"
+        android:fontFamily="@font/brandongrotesque_regular"
+        android:textColor="@color/black"
         android:textSize="50sp" />
 
     <Button
@@ -30,7 +53,11 @@
         android:layout_alignBottom="@id/textview_amount"
         android:layout_toStartOf="@id/textview_amount"
         android:layout_toLeftOf="@id/textview_amount"
-        android:text="-" />
+        android:text="-"
+        android:fontFamily="@font/brandongrotesque_regular"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_ripple_button"/>
 
     <Button
         android:id="@+id/button_increase"
@@ -40,7 +67,11 @@
         android:layout_alignBottom="@id/textview_amount"
         android:layout_toEndOf="@id/textview_amount"
         android:layout_toRightOf="@id/textview_amount"
-        android:text="+" />
+        android:text="+"
+        android:fontFamily="@font/brandongrotesque_regular"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:background="@drawable/custom_ripple_button"/>
 
     <Button
         android:id="@+id/button_add"
@@ -53,7 +84,11 @@
         android:layout_toEndOf="@id/button_increase"
         android:layout_toRightOf="@id/button_increase"
         android:text="Add"
-        android:textAllCaps="false" />
+        android:fontFamily="@font/brandongrotesque_regular"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_ripple_button"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerview"
