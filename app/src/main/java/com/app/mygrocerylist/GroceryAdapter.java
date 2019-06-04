@@ -1,4 +1,4 @@
-package com.example.mygrocerylist;
+package com.app.mygrocerylist;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -64,6 +64,9 @@ public class GroceryAdapter extends RecyclerView.Adapter<GroceryAdapter.GroceryV
         groceryViewHolder.countText.setText(String.valueOf(amount));
         // Pass the ID to the main activity
         groceryViewHolder.itemView.setTag(id);
+        // Selectable text
+        groceryViewHolder.nameText.setTextIsSelectable(true);
+        groceryViewHolder.countText.setTextIsSelectable(true);
     }
 
     @Override

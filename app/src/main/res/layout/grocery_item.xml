@@ -10,6 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
+        android:longClickable="true"
+        android:textIsSelectable="true"
         android:fontFamily="@font/brandongrotesque_regular"
         android:textSize="30sp"
         android:textColor="@color/black"/>
@@ -21,6 +23,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:text="Empty Item"
+        android:longClickable="true"
+        android:textIsSelectable="true"
         android:fontFamily="@font/brandongrotesque_regular"
         android:textSize="30sp"
         android:textColor="@color/black"/>
